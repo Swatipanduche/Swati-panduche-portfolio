@@ -12,7 +12,6 @@ body {
   line-height: 1.6;
 }
 
-
 header {
   display: flex;
   justify-content: space-between;
@@ -42,7 +41,7 @@ nav a {
 nav a:hover {
   color: #4a90e2;
 }
- 
+
 .hero {
   padding: 100px 40px 60px;
   background: #ecf0f1;
@@ -61,7 +60,8 @@ nav a:hover {
 
 .story-btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
   padding: 12px 24px;
   background: #34495E;
   color: white;
@@ -72,9 +72,8 @@ nav a:hover {
 }
 
 .story-btn:hover {
-  background: #758c8d;
+  background: #4a90e2;
 }
-
 
 .about {
   display: flex;
@@ -99,7 +98,7 @@ nav a:hover {
 .about .info a {
   display: inline-block;
   margin-top: 10px;
-  color: #333;
+  color: #34495E;
   font-weight: 600;
 }
 
@@ -117,6 +116,36 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+.skills {
+  padding: 60px 40px;
+  background: #ecf0f1;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #34495E;
+  margin-bottom: 25px;
+}
+
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  background: #34495E;
+  color: white;
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.skills li:hover {
+  background: #4a90e2;
+}
 
 .categories {
   padding: 60px 40px;
@@ -146,13 +175,30 @@ nav a:hover {
 }
 
 .highlight {
-  background: #bdc3c7;
+  background: #dfe6e9;
+  border-left: 5px solid #4a90e2;
 }
 
+.achievements {
+  padding: 60px 40px;
+  background: white;
+  text-align: center;
+}
+
+.achievements h2 {
+  font-size: 2rem;
+  color: #34495E;
+  margin-bottom: 20px;
+}
+
+.achievements p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
 
 .contact-section {
   padding: 60px 40px;
-  background: white;
+  background: #ecf0f1;
   text-align: center;
 }
 
@@ -162,10 +208,49 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background: #34495E;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #4a90e2;
+}
+
+.contact-section p {
+  margin-top: 15px;
+}
+
 .contact-section a {
   color: #34495E;
-  text-decoration: none;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  color: #4a90e2;
 }
 
 footer {
@@ -181,7 +266,6 @@ footer .logo {
   font-size: 1.2rem;
 }
 
-
 .reveal {
   opacity: 0;
   transform: translateY(40px);
@@ -192,6 +276,7 @@ footer .logo {
   opacity: 1;
   transform: translateY(0);
 }
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
